@@ -1,0 +1,17 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "image": "https://via.placeholder.com/600/771796"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "test@test.ru",
+      "password": "Qwerty123!"
+    }
+  ]
+}
