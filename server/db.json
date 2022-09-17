@@ -9,9 +9,9 @@
   ],
   "users": [
     {
-      "id": 1,
       "email": "test@test.ru",
-      "password": "Qwerty123!"
+      "password": "$2a$10$JnuyZGRGxCMn8StlIE7p0O5bZy55BSrqboZLI6W5D4BhcW4WMTDn2",
+      "id": 1
     }
   ]
 }
