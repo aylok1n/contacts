@@ -4,7 +4,8 @@ interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
 }
 
-export const ExpandMore = styled((props: ExpandMoreProps) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const ExpandMore = styled(({ expand, ...props }: ExpandMoreProps) => {
   return <IconButton {...props} />;
 })(({ theme, expand }) => ({
   transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',

@@ -1,54 +1,6 @@
 {
   "contacts": [
     {
-      "id": "6326157a07cd6fcc327bf034",
-      "picture": "https://sun9-69.userapi.com/impg/tfSdAnn96RiCbDlNVcFpyF0kE_IJqDlLWC3TnQ/Hx8karlowuo.jpg?size=1200x1600&quality=95&sign=6ad31171e8fc6138cd1dcb27334ffe5d&type=album",
-      "age": 39,
-      "name": "Robbins Peterson",
-      "gender": "male",
-      "company": "CIRCUM",
-      "email": "robbinspeterson@circum.com",
-      "phone": "+7 (993) 451-2304",
-      "address": "873 Harwood Place, Frizzleburg, Virginia, 6164",
-      "about": "Excepteur ipsum cupidatat ex elit nulla duis minim culpa esse adipisicing cillum. Qui amet officia fugiat exercitation. Irure officia quis est non. Amet anim eu proident nulla ex Lorem excepteur mollit aliquip Lorem laboris ullamco. Amet deserunt aute consequat officia labore dolore ad reprehenderit labore ut labore ipsum dolor Lorem. Consequat id aute reprehenderit aliqua cillum minim sint non ipsum adipisicing cillum do. Culpa qui dolor quis eiusmod non veniam fugiat et Lorem consectetur cupidatat excepteur laboris.\r\n"
-    },
-    {
-      "id": "6326157a1cd27adb8d03b855",
-      "picture": "https://sun9-69.userapi.com/impg/tfSdAnn96RiCbDlNVcFpyF0kE_IJqDlLWC3TnQ/Hx8karlowuo.jpg?size=1200x1600&quality=95&sign=6ad31171e8fc6138cd1dcb27334ffe5d&type=album",
-      "age": 22,
-      "name": "Espinoza Wallace",
-      "gender": "male",
-      "company": "ACCUPHARM",
-      "email": "espinozawallace@accupharm.com",
-      "phone": "+7 (876) 472-3596",
-      "address": "559 Ludlam Place, Dragoon, Utah, 6438",
-      "about": "Laborum amet tempor proident nostrud tempor minim. Ex velit culpa sit minim ullamco proident aute eiusmod voluptate do ipsum anim aliqua. Nostrud deserunt fugiat laborum sint mollit irure enim enim in veniam eu. Nisi reprehenderit ullamco do cupidatat anim et ullamco elit nisi reprehenderit minim sunt veniam.\r\n"
-    },
-    {
-      "id": "6326157a0f148845aa040e75",
-      "picture": "https://sun9-69.userapi.com/impg/tfSdAnn96RiCbDlNVcFpyF0kE_IJqDlLWC3TnQ/Hx8karlowuo.jpg?size=1200x1600&quality=95&sign=6ad31171e8fc6138cd1dcb27334ffe5d&type=album",
-      "age": 32,
-      "name": "Kerr Roach",
-      "gender": "male",
-      "company": "GEOFORMA",
-      "email": "kerrroach@geoforma.com",
-      "phone": "+7 (975) 417-3241",
-      "address": "450 Highlawn Avenue, Beechmont, California, 3324",
-      "about": "Ut est cillum exercitation amet ut adipisicing dolore anim culpa commodo dolor. Voluptate magna ipsum et laborum ad incididunt excepteur ipsum culpa fugiat dolore amet adipisicing culpa. Velit nulla do mollit esse est Lorem eu adipisicing sunt dolor. Proident enim eiusmod pariatur aute veniam minim.\r\n"
-    },
-    {
-      "id": "6326157af26e057e12d5e105",
-      "picture": "https://sun9-69.userapi.com/impg/tfSdAnn96RiCbDlNVcFpyF0kE_IJqDlLWC3TnQ/Hx8karlowuo.jpg?size=1200x1600&quality=95&sign=6ad31171e8fc6138cd1dcb27334ffe5d&type=album",
-      "age": 21,
-      "name": "Lucille Robles",
-      "gender": "female",
-      "company": "ENTROFLEX",
-      "email": "lucillerobles@entroflex.com",
-      "phone": "+7 (818) 590-2348",
-      "address": "483 Monument Walk, Haena, Wisconsin, 1998",
-      "about": "Qui labore reprehenderit reprehenderit amet veniam ullamco dolor aliquip eiusmod sit quis nulla excepteur. Id in consequat sit enim cillum fugiat reprehenderit reprehenderit consequat fugiat amet ea. Est minim ullamco ex in cillum cillum sit aute deserunt incididunt elit elit laborum. Est ad fugiat ipsum laborum ad anim consequat cillum pariatur. Eiusmod amet cillum nulla esse cillum reprehenderit nisi irure commodo nisi exercitation consequat.\r\n"
-    },
-    {
       "id": "6326157a2532f4fb976fe206",
       "picture": "https://sun9-69.userapi.com/impg/tfSdAnn96RiCbDlNVcFpyF0kE_IJqDlLWC3TnQ/Hx8karlowuo.jpg?size=1200x1600&quality=95&sign=6ad31171e8fc6138cd1dcb27334ffe5d&type=album",
       "age": 31,
@@ -59,18 +11,6 @@
       "phone": "+7 (914) 598-3897",
       "address": "224 Kermit Place, Delwood, Northern Mariana Islands, 4026",
       "about": "Eiusmod aliquip ad labore do laboris in duis ut sint labore in elit adipisicing officia. Labore consectetur excepteur qui id officia minim officia enim esse ipsum ad nulla. Culpa minim commodo duis consectetur consectetur quis sint ea ipsum esse. Velit magna eiusmod mollit laborum nisi ullamco nulla nostrud minim proident cupidatat cupidatat. Minim aute tempor laborum irure ipsum ut officia elit fugiat labore sit. Qui aute qui culpa dolor nulla.\r\n"
-    },
-    {
-      "id": "6326157a1811b1b17c89a2b9",
-      "picture": "https://sun9-69.userapi.com/impg/tfSdAnn96RiCbDlNVcFpyF0kE_IJqDlLWC3TnQ/Hx8karlowuo.jpg?size=1200x1600&quality=95&sign=6ad31171e8fc6138cd1dcb27334ffe5d&type=album",
-      "age": 28,
-      "name": "Parrish Mosley",
-      "gender": "male",
-      "company": "KRAG",
-      "email": "parrishmosley@krag.com",
-      "phone": "+7 (863) 570-3237",
-      "address": "458 Raleigh Place, Hardyville, Georgia, 793",
-      "about": "Deserunt excepteur eu non duis nisi enim incididunt sit id laboris veniam laboris dolor non. Duis eiusmod dolor anim exercitation minim sunt quis incididunt tempor sunt. Elit voluptate nostrud ad quis sint id in quis reprehenderit occaecat anim labore. Sit sunt qui id proident anim ad dolore cupidatat id id cillum quis eiusmod.\r\n"
     },
     {
       "id": "6326157a4c4e108ee37bb98a",
@@ -143,6 +83,26 @@
       "phone": "+7 (826) 588-3327",
       "address": "786 Girard Street, Highland, Pennsylvania, 2506",
       "about": "Dolore ullamco duis culpa Lorem officia qui amet sunt fugiat ea. Et occaecat culpa tempor officia irure aliquip consectetur. Laboris aliquip dolor aliquip deserunt amet aute. Duis nostrud in ut in do eu. In tempor pariatur nulla irure commodo nostrud incididunt commodo aliquip.\r\n"
+    },
+    {
+      "name": "николай кулигин",
+      "phone": "+79828305510",
+      "email": "nikolya.blog@gmail.com",
+      "company": "",
+      "address": "Совхозная 1а",
+      "about": "",
+      "picture": "",
+      "id": "KZAvPHf"
+    },
+    {
+      "name": "николай кулигин",
+      "phone": "+79828305510",
+      "email": "nikolya.blog@gmail.com",
+      "company": "",
+      "address": "Совхозная 1а",
+      "about": "",
+      "picture": "",
+      "id": "p3AoqjQ"
     }
   ],
   "users": [

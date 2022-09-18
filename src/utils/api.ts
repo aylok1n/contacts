@@ -8,11 +8,11 @@ import { store } from './store';
 import { DBItems } from '../types/global';
 import dbManager from './dbManager';
 
-interface APIInterface {
+interface APIInterface<T> {
   method: Method;
   url: string;
   headers?: AxiosRequestHeaders;
-  data?: any;
+  data?: T;
 }
 
 export const axios: AxiosInstance = Axios.create({
@@ -26,9 +26,9 @@ export const getToken = (): Promise<Auth> => dbManager.getItem<Auth>(DBItems.AUT
 
 export const getAuthHeaders = (at: string): { [key: string]: string } => ({ Authorization: `Bearer ${at}` });
 
-export const api = ({
+export const api = <T>({
   method, url, headers, data,
-}: APIInterface): Promise<AxiosResponse> => new Promise((resolve, reject) => {
+}: APIInterface<T>): Promise<AxiosResponse> => new Promise((resolve, reject) => {
   getToken()
     .then((value) => {
       const authHeaders = getAuthHeaders(value.accessToken);

@@ -1,17 +1,10 @@
-export enum Gender {
-  FEMALE = 'female',
-  MALE = 'male'
-}
-
 export interface Contact {
   id: string,
-  picture: string,
-  age: number,
   name: string,
-  gender: Gender,
-  company: string,
-  email: string,
   phone: string,
-  address: string
-  about: string
+  picture: string | null,
+  company: string | null,
+  email: string | null,
+  address: string | null
+  about: string | null
 }
