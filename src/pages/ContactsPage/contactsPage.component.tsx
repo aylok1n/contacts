@@ -12,7 +12,7 @@ import { logout } from '../../slices/auth.slice';
 import { ContactForm } from '../../components/ContactForm/contactForm.component';
 
 export const ContactsPage = memo(() => {
-  const { data, loadingList, error } = useAppSelector((state) => state.contactsSlice);
+  const { data = [], loadingList, error } = useAppSelector((state) => state.contactsSlice);
   const dispatch = useAppDispatch();
   const [search, setSearch] = useState('');
   const [modalVisible, setModalVisible] = useState(false);

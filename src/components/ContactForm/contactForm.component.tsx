@@ -1,6 +1,8 @@
-import { FC, useState, useCallback, ChangeEventHandler, useMemo } from 'react';
+import { FC, useState, useCallback, ChangeEventHandler, useMemo, useRef } from 'react';
 import { Contact } from '../../interfaces/contact';
-import { Modal, Paper, TextField, Alert, Button, CircularProgress } from '@mui/material';
+import { Modal, Paper, TextField, Alert, Button, CircularProgress, Box, IconButton } from '@mui/material';
+import PhotoSizeSelectActualOutlinedIcon from '@mui/icons-material/PhotoSizeSelectActualOutlined';
+import { DeleteOutline } from '@mui/icons-material';
 import isLength from 'validator/lib/isLength';
 import isEmail from 'validator/lib/isEmail';
 import isMobilePhone from 'validator/lib/isMobilePhone';
@@ -24,6 +26,8 @@ export const ContactForm: FC<Props> = ({ editableContact, handleClose }) => {
     about: editableContact?.about || '',
     picture: editableContact?.picture || '',
   });
+
+  const fileRef = useRef<HTMLInputElement>(null);
 
   const handleChangeField = useCallback<ChangeEventHandler<HTMLInputElement>>(
     (e) => {
@@ -58,6 +62,27 @@ export const ContactForm: FC<Props> = ({ editableContact, handleClose }) => {
     }
   }, [editableContact, formState, handleClose, isValid]);
 
+  const handleOpenFileReader = useCallback(() => fileRef.current?.click(), []);
+
+  const handleChangePicture = useCallback(
+    (picture: string) => () => {
+      setFormState((state) => ({ ...state, picture }));
+    },
+    [],
+  );
+
+  const handleUploadImage = useCallback<ChangeEventHandler<HTMLInputElement>>(
+    (event) => {
+      const file = event.target.files?.[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => handleChangePicture(reader.result as string)();
+      }
+    },
+    [handleChangePicture],
+  );
+
   return (
     <Modal open={true} onClose={handleClose} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <Paper
@@ -66,8 +91,9 @@ export const ContactForm: FC<Props> = ({ editableContact, handleClose }) => {
           width: { xs: '100%', sm: '80%', md: '60%', lg: '50%', xl: '40%' },
           maxHeight: '90%',
           overflow: 'auto',
-          border: 'none',
-          boxShadow: 'none',
+          display: 'flex',
+          justifyContent: 'center',
+          flexDirection: 'column',
         }}
       >
         <TextField
@@ -125,6 +151,50 @@ export const ContactForm: FC<Props> = ({ editableContact, handleClose }) => {
           fullWidth
           sx={{ my: 1 }}
         />
+        <Box
+          onClick={formState.picture ? undefined : handleOpenFileReader}
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            position: 'relative',
+            alignItems: 'center',
+            border: '1px solid rgba(0, 0, 0, 0.12)',
+            borderRadius: '4px',
+            marginBottom: '32px',
+            cursor: 'pointer',
+            width: '96px',
+            height: '96px',
+            ':hover': {
+              opacity: formState.picture ? 1 : 0.4,
+            },
+          }}
+        >
+          {formState.picture ? (
+            <>
+              <img src={formState.picture} width='96px' height='96px' />
+              <IconButton style={{ position: 'absolute', right: -5, top: -5 }} onClick={handleChangePicture('')}>
+                <DeleteOutline color='primary' />
+              </IconButton>
+            </>
+          ) : (
+            <>
+              <input
+                ref={fileRef}
+                data-testid='sectorTypes-editor-modal-icon'
+                onChange={handleUploadImage}
+                type='file'
+                accept='image/*'
+                hidden
+              />
+              <PhotoSizeSelectActualOutlinedIcon
+                sx={{
+                  color: 'rgba(0, 0, 0, 0.12)',
+                  fontSize: '35px',
+                }}
+              />
+            </>
+          )}
+        </Box>
         {showError ? (
           <Alert sx={{ mt: 3 }} severity='error'>
             {errorForm}
