@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import authSlice from '../slices/auth.slice';
+import contactsSlice from '../slices/contacts.slice';
 
 export const store = configureStore({
   reducer: {
-    authSlice
+    authSlice,
+    contactsSlice
   },
 });
 
