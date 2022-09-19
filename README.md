@@ -2,9 +2,9 @@
 `16.15.1`
 
 #### start development
-`npm install`
-`npm run start`
+- `npm install`
+- `npm run start`
 
 ##### test user
-`email: test@test.ru`
-`password: Qwerty123!`
+- `email: test@test.ru`
+- `password: Qwerty123!`
